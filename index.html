@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-yellow-200 via-blue-300 to-red-200">
+    <header>
+      <h1 class="my-8 text-6xl text-center text-white font-bold">
+        Calculator using JavaScript
+      </h1>
+    </header>
+    <main>
+      <section class="mt-12 w-1/4 border-4 mx-auto">
+        <h3
+          id="display"
+          class="text-right bg-black text-4xl w-full h-20 text-white py-2 px-4"
+        ></h3>
+        <div>
+          <ul
+            id="cal"
+            class="
+              grid grid-cols-4
+              justify-center
+              border-2
+              justify-items-center
+            "
+          >
+            <li
+              id="ac"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+                col-span-2
+              "
+            >
+              AC
+            </li>
+            <li
+              id="del"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              DEL
+            </li>
+            <li
+              id="devision"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              /
+            </li>
+            <li
+              id="one"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              1
+            </li>
+            <li
+              id="two"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              2
+            </li>
+            <li
+              id="three"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              3
+            </li>
+            <li
+              id="multiple"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              *
+            </li>
+            <li
+              id="four"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              4
+            </li>
+            <li
+              id="five"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              5
+            </li>
+            <li
+              id="six"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              6
+            </li>
+            <li
+              id="plus"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              +
+            </li>
+            <li
+              id="seven"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              7
+            </li>
+            <li
+              id="eight"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              8
+            </li>
+            <li
+              id="nine"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              9
+            </li>
+            <li
+              id="minus"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              -
+            </li>
+            <li
+              id="desimal"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              .
+            </li>
+            <li
+              id="zero"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+              "
+            >
+              0
+            </li>
+            <li
+              id="equal"
+              class="
+                bg-blue-500
+                border-2
+                w-full
+                h-24
+                text-center
+                pt-6
+                text-4xl text-white
+                font-bold
+                col-span-2
+              "
+            >
+              =
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
